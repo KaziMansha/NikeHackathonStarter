@@ -49,7 +49,12 @@ const validateEmailWithError = (email) => {
 };
 
 const getInitials = (name) => {
-  // insert code
+  let nameArr = fullName.split(" ");
+  let firstName = nameArr[0];
+  let firstI = firstName[0];
+  let lastName = nameArr[1];
+  let lastI = lastName[0];
+  return(firstI + lastI);
 };
 
 const howRepetitiveAreYou = (str, word) => {
