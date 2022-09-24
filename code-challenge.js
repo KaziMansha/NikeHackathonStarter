@@ -2,19 +2,30 @@
 const { SPANISH_DICTIONARY, SHOE_LIST } = require('./constants.js');
 
 const newSneakers = (sneakers) => {
-  // insert code
+  console.log("New sneakers " + sneakerName + " dropping soon");
 };
 
 const isThatMichaelJordan = (name) => {
-  // insert code
+  let name = String.toLowerCase();
+  if(name == "michael jordan"){
+    console.log("true");
+  }
+  else {
+    console.log('false');
+  }
 };
 
 const areYouM = (name) => {
-  // insert code
+    if (name[0] == "M"){
+      console.log("True")
+    }
+    else {
+      console.log("False")
+    }
 };
 
 const mostViewsThreeSneakers = (sneakerOneViews, sneakerTwoViews, sneakerThreeViews) => {
-  // insert code
+  console.log(Math.max(count1, count2, count3));
 };
 
 const mostViews = (sneakerViews) => {
