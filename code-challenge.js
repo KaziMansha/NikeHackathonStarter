@@ -2,10 +2,10 @@
 const { SPANISH_DICTIONARY, SHOE_LIST } = require('./constants.js');
 
 const newSneakers = (sneakers) => {
-  console.log("New sneakers " + sneakerName + " dropping soon");
+  return("New sneakers " + sneakers + " dropping soon");
 };
 
-const isThatMichaelJordan = (name) => {
+const isThatMichaelJordan = (String) => {
   let name = String.toLowerCase();
   if(name == "michael jordan"){
     console.log("true");
@@ -25,7 +25,7 @@ const areYouM = (name) => {
 };
 
 const mostViewsThreeSneakers = (sneakerOneViews, sneakerTwoViews, sneakerThreeViews) => {
-  console.log(Math.max(count1, count2, count3));
+  console.log(Math.max(sneakerOneViews, sneakerTwoViews, sneakerThreeViews));
 };
 
 const mostViews = (sneakerViews) => {
@@ -80,3 +80,5 @@ module.exports = {
   getUniqueSneakers,
   getMostViewedSneakers,
 };
+
+console.log(newSneakers("Hello"))
