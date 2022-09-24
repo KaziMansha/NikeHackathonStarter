@@ -28,8 +28,16 @@ const mostViewsThreeSneakers = (sneakerOneViews, sneakerTwoViews, sneakerThreeVi
   return(Math.max(sneakerOneViews, sneakerTwoViews, sneakerThreeViews));
 };
 
-const mostViews = (sneakerViews) => {
-  // insert code
+const mostViews = (arr) => {
+  let max = 0;
+  for (let i = 0; i < arr.length; i++)
+    {
+    //  max = arr[i];
+    if (arr[i] > max) {
+        max = arr[i];
+    }
+}
+return max;
 };
 
 const validateEmail = (email) => {
@@ -80,5 +88,3 @@ module.exports = {
   getUniqueSneakers,
   getMostViewedSneakers,
 };
-
-console.log(newSneakers("Hello"))
