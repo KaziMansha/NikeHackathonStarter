@@ -48,7 +48,7 @@ const validateEmailWithError = (email) => {
   // insert code
 };
 
-const getInitials = (name) => {
+const getInitials = (fullName) => {
   let nameArr = fullName.split(" ");
   let firstName = nameArr[0];
   let firstI = firstName[0];
