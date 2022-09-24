@@ -8,24 +8,24 @@ const newSneakers = (sneakers) => {
 const isThatMichaelJordan = (String) => {
   let name = String.toLowerCase();
   if(name == "michael jordan"){
-    console.log("true");
+    return true;
   }
   else {
-    console.log('false');
+    return false;
   }
 };
 
 const areYouM = (name) => {
     if (name[0] == "M"){
-      console.log("True")
+      return true
     }
     else {
-      console.log("False")
+      return false
     }
 };
 
 const mostViewsThreeSneakers = (sneakerOneViews, sneakerTwoViews, sneakerThreeViews) => {
-  console.log(Math.max(sneakerOneViews, sneakerTwoViews, sneakerThreeViews));
+  return(Math.max(sneakerOneViews, sneakerTwoViews, sneakerThreeViews));
 };
 
 const mostViews = (sneakerViews) => {
